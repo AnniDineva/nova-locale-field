@@ -88,6 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Support Nova 3.0 in `composer.json` requirements
+- Support Nova 4.0 in `composer.json` requirements
 
 ## [2.0.1] - 2020-02-27
 
