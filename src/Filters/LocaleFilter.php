@@ -2,7 +2,7 @@
 
 namespace OptimistDigital\NovaLocaleField\Filters;
 
-use Illuminate\Http\Request;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Filters\Filter;
 use OptimistDigital\NovaLocaleField\LocaleField;
 
@@ -31,12 +31,12 @@ class LocaleFilter extends Filter
         $this->locales = LocaleField::getLocales();
     }
 
-    public function apply(Request $request, $query, $value)
+    public function apply(NovaRequest $request, $query, $value)
     {
         return $query->where($this->localeFieldKey, $value);
     }
 
-    public function options(Request $request)
+    public function options(NovaRequest $request)
     {
         return array_flip($this->locales);
     }
