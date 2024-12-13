@@ -1,25 +1,21 @@
 {
   "private": true,
   "scripts": {
-    "dev": "mix",
+    "dev": "npm run development",
+    "development": "mix",
     "watch": "mix watch",
     "hot": "mix watch --hot",
-    "prod": "mix --production",
-    "format": "prettier --write 'resources/**/*.{js,scss,vue}'"
+    "prod": "npm run production",
+    "production": "mix --production",
+    "nova:install": "npm --prefix='../../vendor/laravel/nova' ci"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "laravel-mix": "^6.0.13",
-    "laravel-nova": "^1.9.0",
-    "postcss": "^8.2.6",
-    "resolve-url-loader": "^3.1.2",
-    "sass": "^1.32.8",
-    "sass-loader": "^11.0.1",
-    "vue-loader": "^15.9.6",
-    "vue-template-compiler": "^2.6.12"
+    "@vue/compiler-sfc": "^3.2.22",
+    "laravel-mix": "^6.0.41",
+    "postcss": "^8.3.11",
+    "vue-loader": "^16.8.3"
   },
   "dependencies": {
-    "prettier": "^2.2.1",
-    "vue": "^2.6.12"
+    "vue": "^3.2.22"
   }
 }

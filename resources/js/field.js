@@ -1,5 +1,10 @@
-Nova.booting((Vue, router, store) => {
-  Vue.component('index-nova-locale-field', require('./components/IndexField').default);
-  Vue.component('detail-nova-locale-field', require('./components/DetailField').default);
-  Vue.component('form-nova-locale-field', require('./components/FormField').default);
-});
+import IndexField from './components/IndexField'
+import DetailField from './components/DetailField'
+import FormField from './components/FormField'
+
+// Nova v4 Field Registration
+window.Nova.booting((app, store) => {
+    app.component('index-nova-locale-field', IndexField)
+    app.component('detail-nova-locale-field', DetailField)
+    app.component('form-nova-locale-field', FormField)
+})
