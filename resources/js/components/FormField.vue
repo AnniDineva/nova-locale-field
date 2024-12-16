@@ -33,7 +33,7 @@
 <script>
 import { FormField, HandlesValidationErrors } from 'laravel-nova';
 import { getParameterByName } from '../../js/util';
-import LocaleButton from './LocaleButton';
+import LocaleButton from './LocaleButton.vue';
 
 export default {
   components: { LocaleButton },

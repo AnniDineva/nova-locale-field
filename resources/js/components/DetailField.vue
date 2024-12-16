@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import LocaleOptionsList from './LocaleOptionsList';
-import LocaleButton from './LocaleButton';
+import LocaleOptionsList from './LocaleOptionsList.vue';
+import LocaleButton from './LocaleButton.vue';
 
 export default {
   components: { LocaleOptionsList, LocaleButton },

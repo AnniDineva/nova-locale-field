@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import LocaleOptionsList from './LocaleOptionsList';
+import LocaleOptionsList from './LocaleOptionsList.vue';
 
 export default {
   components: { LocaleOptionsList },

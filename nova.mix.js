@@ -14,7 +14,18 @@ class NovaExtension {
     webpackConfig(webpackConfig) {
         webpackConfig.externals = {
             vue: 'Vue',
+            '@inertiajs/inertia': 'Inertia',
+            '@/fields': 'LaravelNova',
+            '@/components': 'LaravelNova',
+            '@/mixins': 'LaravelNova',
+            '@/util': 'LaravelNova',
             'laravel-nova': 'LaravelNova'
+        }
+
+        webpackConfig.resolve = {
+            alias: {
+                '@': path.resolve(__dirname, 'resources/js/'),
+            }
         }
 
         webpackConfig.output = {
